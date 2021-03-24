@@ -31,3 +31,7 @@ body {
   background-image: url(../images/maerten-van-heemskerck-panorama-with-the-abduction-of-helen-amidst-the-wonders-of-the-ancient-world-walters_37656.jpg);
   padding: 1em;
 }
+
+img {
+  width: 100%;
+}
