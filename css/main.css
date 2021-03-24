@@ -9,4 +9,24 @@ html {
 
 /*
 font-family: 'Merriweather', serif;
-/*
+*/
+
+header {
+  font-style: italic;
+  margin: 1em;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  grid-template-columns: 1fr;
+  display: grid;
+  grid-template-areas:
+  "main"
+}
+
+.remarkable {
+  background-size: auto;
+  background-image: url(../images/maerten-van-heemskerck-panorama-with-the-abduction-of-helen-amidst-the-wonders-of-the-ancient-world-walters_37656.jpg);
+}
