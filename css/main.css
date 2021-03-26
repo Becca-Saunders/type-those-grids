@@ -24,14 +24,27 @@ body {
   display: grid;
   grid-template-areas:
   "main"
-}
-
-.remarkable {
-  background-size: cover;
-  background-image: url(../images/maerten-van-heemskerck-panorama-with-the-abduction-of-helen-amidst-the-wonders-of-the-ancient-world-walters_37656.jpg);
-  padding: 1em;
+  "div div div"
 }
 
 img {
   width: 100%;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+  "box 1 box1 box1"
+}
+
+.banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: fr
+}
+
+.banner:nth-child(1) {
+  grid-area: box1;
 }
