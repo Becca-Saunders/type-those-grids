@@ -11,6 +11,10 @@ html {
 font-family: 'Merriweather', serif;
 */
 
+main {
+
+}
+
 header {
   font-style: italic;
   margin: 1em;
@@ -21,6 +25,8 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto 4em;
+  display: grid;
+  grid-template-columns:  repeat(3 , 1fr)
 }
 
 img {
