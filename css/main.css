@@ -14,37 +14,28 @@ font-family: 'Merriweather', serif;
 header {
   font-style: italic;
   margin: 1em;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-
-  grid-template-columns: 1fr;
-  display: grid;
-  grid-template-areas:
-  "main"
-  "div div div"
-}
-
-img {
-  width: 100%;
-}
-
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas:
-  "box 1 box1 box1"
+  font-weight: normal;
 }
 
 .banner {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: fr
+  grid-template-rows: auto 4em;
 }
 
-.banner:nth-child(1) {
-  grid-area: box1;
+img {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
+
+h2 {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  z-index: 1;
+}
+
+p {
+  grid-column: 1;
+  grid-row: 3;
+  z-index: 1;
 }
